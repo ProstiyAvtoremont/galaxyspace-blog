@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Cope with Feelings of Isolation in a Digital World</title>
+    <link rel="stylesheet" href="/blog.css">
+</head>
+<body>
+<canvas id="star-bg"></canvas>
+<div class="page">
+
+    <nav class="nav">
+        <a class="nav-logo" href="/">⭐ DOGE Galaxy <span>/ Blog</span></a>
+        <a class="nav-back" href="https://galaxyspace.xyz">← BACK TO GALAXY</a>
+    </nav>
+
+    <main class="content">
+        <a class="back-to-blog" href="/">← All articles</a>
+        <div class="article-page-label">CATEGORY &nbsp;·&nbsp; MONTH YEAR</div>
+        <h1 class="article-page-title">YOUR ARTICLE TITLE HERE</h1>
+
+        <div class="article-body">
+
+            <p>Your opening paragraph goes here.</p>
+
+            <h2>A Section Heading</h2>
+            <p>Text for this section.</p>
+
+            <!-- Image example -->
+            <img src="../images/your-photo.jpg" alt="Description of image"
+                 style="width:100%;border-radius:12px;margin:20px 0;">
+
+            <h2>Another Section</h2>
+            <p>More text here. You can use <strong>bold</strong>, <em>italic</em>,
+            and <a href="https://galaxyspace.xyz">links</a>.</p>
+
+            <ul>
+                <li>Bullet point one</li>
+                <li>Bullet point two</li>
+                <li>Bullet point three</li>
+            </ul>
+
+            <blockquote>A highlighted quote or key takeaway goes here.</blockquote>
+
+            <p>Closing paragraph. <a href="https://galaxyspace.xyz">Open the galaxy →</a></p>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <a href="/">← Blog</a> &nbsp;·&nbsp;
+        <a href="https://galaxyspace.xyz">galaxyspace.xyz</a> &nbsp;·&nbsp; © 2026 DOGE Galaxy
+    </footer>
+</div>
+<script src="/blog.js"></script>
+</body>
+</html>
