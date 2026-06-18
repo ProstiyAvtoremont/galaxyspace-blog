@@ -18,18 +18,31 @@
     <main class="content">
         <a class="back-to-blog" href="/">← All articles</a>
         <div class="article-page-label">CATEGORY &nbsp;·&nbsp; MONTH YEAR</div>
-        <h1 class="article-page-title">YOUR ARTICLE TITLE HERE</h1>
+        <h1 class="article-page-title">How to Cope with Feelings of Isolation in a Digital World</h1>
+
+  <img src="../images/images/digworld.png" alt="Description of image"
+                 style="width:100%;border-radius:12px;margin:20px 0;">
 
         <div class="article-body">
+<p>We live in the most connected era in human history, yet millions feel deeply isolated. Social media feeds are endless, but meaningful connection is scarce. Digital loneliness is a real modern challenge, but you can overcome it by shifting how you interact with the online space.</p>
 
+<p>Shifting from Passive Scrolling to Meaningful Presence</p>
+
+<p>To combat digital isolation, stop consuming and start contributing:</p>
+<ul> 
+<li> Curate your digital space: Follow platforms that inspire, not those that trigger envy.</li>
+<li> Share authentic thoughts: True connection happens when we dare to be vulnerable.</li>
+<li> Seek shared human experiences: Look for spaces where people share real emotions.</li>
+</ul>
+<p>Finding Your Digital Sanctuary</p>
+
+<p>True connection comes from knowing your voice is heard. If you are looking for a place to leave your authentic mark and feel less alone, explore the digital universe at <a href="https://galaxyspace.xyz">GalaxySpace</a>. Read what others feel and claim your own piece of the cosmos today.</p>
             <p>Your opening paragraph goes here.</p>
 
             <h2>A Section Heading</h2>
             <p>Text for this section.</p>
 
             <!-- Image example -->
-            <img src="../images/your-photo.jpg" alt="Description of image"
-                 style="width:100%;border-radius:12px;margin:20px 0;">
 
             <h2>Another Section</h2>
             <p>More text here. You can use <strong>bold</strong>, <em>italic</em>,
