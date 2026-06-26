@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOGE Galaxy — Blog</title>
     <link rel="stylesheet" href="blog.css">
+    <style>
+        /* Category filter bar — matches the existing gold/black palette in blog.css */
+        .category-filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 0 44px;
+        }
+        .category-filter-btn {
+            background: rgba(255,215,0,0.06);
+            border: 1px solid rgba(255,215,0,0.25);
+            color: rgba(255,215,0,0.75);
+            font: inherit;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 7px 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .category-filter-btn:hover {
+            background: rgba(255,215,0,0.15);
+            border-color: rgba(255,215,0,0.45);
+        }
+        .category-filter-btn.active {
+            background: rgba(255,215,0,0.22);
+            border-color: rgba(255,215,0,0.6);
+            color: #ffd700;
+            box-shadow: 0 0 16px rgba(255,215,0,0.15);
+        }
+        .article-card.is-hidden {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            .category-filter-bar { margin-bottom: 32px; }
+            .category-filter-btn { font-size: 10px; padding: 6px 13px; }
+        }
+    </style>
 </head>
 <body>
 <canvas id="star-bg"></canvas>
@@ -22,60 +62,82 @@
             <p class="blog-subtitle">News, guides, and stories from the DOGE Galaxy universe.</p>
         </div>
 
-        <!-- ── ARTICLE CARDS — add a new block here for each article ── -->
+        <!-- ── CATEGORY FILTER BAR ──
+             "All" plus one button per distinct category used below.
+             Add a new button here ONLY if you introduce a brand-new category. -->
+        <div class="category-filter-bar" id="categoryFilterBar">
+            <button class="category-filter-btn active" data-category="all">All</button>
+            <button class="category-filter-btn" data-category="Getting Started">Getting Started</button>
+            <button class="category-filter-btn" data-category="Crypto Culture">Crypto Culture</button>
+            <button class="category-filter-btn" data-category="Space &amp; Reflection">Space &amp; Reflection</button>
+            <button class="category-filter-btn" data-category="Legacy &amp; Meaning">Legacy &amp; Meaning</button>
+            <button class="category-filter-btn" data-category="Connection &amp; Wellbeing">Connection &amp; Wellbeing</button>
+            <button class="category-filter-btn" data-category="Romance &amp; Milestones">Romance &amp; Milestones</button>
+            <button class="category-filter-btn" data-category="Friendship">Friendship</button>
+            <button class="category-filter-btn" data-category="Family &amp; New Beginnings">Family &amp; New Beginnings</button>
+            <button class="category-filter-btn" data-category="Milestones &amp; Achievement">Milestones &amp; Achievement</button>
+            <button class="category-filter-btn" data-category="Pets &amp; Funny Stuff">Pets &amp; Funny Stuff</button>
+            <button class="category-filter-btn" data-category="Gifts &amp; Celebrations">Gifts &amp; Celebrations</button>
+            <button class="category-filter-btn" data-category="Space &amp; Science">Space &amp; Science</button>
+        </div>
 
-        
+        <!-- ── ARTICLE CARDS — add a new block here for each article ──
+             Every card now needs a data-category attribute on the <a> tag
+             matching one of the filter buttons above, AND the same category
+             name should replace "Announcement"/"News" inside .article-meta
+             so the label is visible on the card itself, not just filterable. ── -->
 
-<a class="article-card" href="articles/Doge_as_a_Currency.html">
-            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Announcement</div>
+        <a class="article-card" data-category="Getting Started" href="articles/welcome.html">
+            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Getting Started</div>
+            <div class="article-title">Welcome to DOGE Galaxy — Your Star Awaits</div>
+            <div class="article-excerpt">Learn how to claim your piece of the digital universe, leave a message for the world, and share your star with everyone you know.</div>
+            <span class="article-read-more">Read more →</span>
+        </a>
+
+        <a class="article-card" data-category="Crypto Culture" href="articles/Doge_as_a_Currency.html">
+            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Crypto Culture</div>
             <div class="article-title">Dogecoin Beyond the Meme: A Digital Currency for Good Deeds</div>
             <div class="article-excerpt">Discover the philanthropic side of Dogecoin. Learn how the Doge community uses fast microtransactions to support global empathy and charity.</div>
             <span class="article-read-more">Read more →</span>
         </a>
-        
-<a class="article-card" href="articles/Human_Nature.html">
-            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Announcement</div>
+
+        <a class="article-card" data-category="Space &amp; Reflection" href="articles/Human_Nature.html">
+            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Space &amp; Reflection</div>
             <div class="article-title">What the Cosmos Says About Human Nature & Connection</div>
             <div class="article-excerpt">We are made of star-stuff. Explore what the universe reveals about our deepest human desires for meaning, order, and global connection.</div>
             <span class="article-read-more">Read more →</span>
         </a>
-        
-<a class="article-card" href="articles/Our_Problems_Are_Temporary.html">
-            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Announcement</div>
+
+        <a class="article-card" data-category="Space &amp; Reflection" href="articles/Our_Problems_Are_Temporary.html">
+            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Space &amp; Reflection</div>
             <div class="article-title">The Vastness of the Universe: Why Your Problems Are Temporary</div>
             <div class="article-excerpt">Feeling overwhelmed? Discover how a cosmic perspective shifts your mindset, reduces anxiety, and proves that our daily struggles are beautifully small.</div>
             <span class="article-read-more">Read more →</span>
         </a>
-        
-          <a class="article-card" href="articles/Your_Mark_on_History.html">
-            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Announcement</div>
+
+        <a class="article-card" data-category="Legacy &amp; Meaning" href="articles/Your_Mark_on_History.html">
+            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Legacy &amp; Meaning</div>
             <div class="article-title">Why It Matters to Leave Your Mark & Legacy on History</div>
             <div class="article-excerpt">Explore why humans have an innate desire to leave a legacy. Learn how sharing your wisdom helps defeat time and connects generations.</div>
             <span class="article-read-more">Read more →</span>
         </a>
 
-<a class="article-card" href="articles/feelings_of_isolation.html">
-    <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; News</div>
-    <div class="article-title">How to Cope with Digital Isolation & Loneliness | GalaxySpace</div>
-    <div class="article-excerpt">Feeling lonely in a hyper-connected world? Discover actionable ways to overcome digital isolation and find meaningful connections in the modern era.</div>
-    <span class="article-read-more">Read more →</span>
-</a>
-        
-        <a class="article-card" href="articles/invisible-thread.html">
-    <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; News</div>
-    <div class="article-title">The Invisible Thread: Why the Night Sky Cures Our Modern Loneliness</div>
-    <div class="article-excerpt"><p>In an era of high digital isolation, finding true human connection requires looking away from our screens and up at the boundless night sky. The Crypto Galaxy web3 project transforms this philosophy into a digital reality centered around community, cosmos, and human unity. Join our space blog to learn how you can immortalize your footprint in the digital galaxy and reconnect with the universe.</p></div>
-    <span class="article-read-more">Read more →</span>
-</a>
-
-        <a class="article-card" href="articles/welcome.html">
-            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Announcement</div>
-            <div class="article-title">Welcome to DOGE Galaxy — Your Star Awaits</div>
-            <div class="article-excerpt">Learn how to claim your piece of the digital universe, leave a message for the world, and share your star with everyone you know.</div>
+        <a class="article-card" data-category="Connection &amp; Wellbeing" href="articles/feelings_of_isolation.html">
+            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Connection &amp; Wellbeing</div>
+            <div class="article-title">How to Cope with Digital Isolation & Loneliness | GalaxySpace</div>
+            <div class="article-excerpt">Feeling lonely in a hyper-connected world? Discover actionable ways to overcome digital isolation and find meaningful connections in the modern era.</div>
             <span class="article-read-more">Read more →</span>
         </a>
-        
-        <!-- copy the block above and change href, date, title, excerpt for each new article -->
+
+        <a class="article-card" data-category="Connection &amp; Wellbeing" href="articles/invisible-thread.html">
+            <div class="article-meta">⭐ June 2026 &nbsp;·&nbsp; Connection &amp; Wellbeing</div>
+            <div class="article-title">The Invisible Thread: Why the Night Sky Cures Our Modern Loneliness</div>
+            <div class="article-excerpt">In an era of high digital isolation, finding true human connection requires looking away from our screens and up at the boundless night sky. The Crypto Galaxy web3 project transforms this philosophy into a digital reality centered around community, cosmos, and human unity. Join our space blog to learn how you can immortalize your footprint in the digital galaxy and reconnect with the universe.</div>
+            <span class="article-read-more">Read more →</span>
+        </a>
+
+        <!-- copy a block above, set data-category on the <a> AND inside .article-meta,
+             then change href, date, title, excerpt for each new article -->
 
     </main>
 
@@ -84,5 +146,29 @@
     </footer>
 </div>
 <script src="blog.js"></script>
+<script>
+    // Category filter — pure vanilla JS, no dependency on blog.js internals.
+    (function () {
+        var bar = document.getElementById('categoryFilterBar');
+        if (!bar) return;
+        var buttons = bar.querySelectorAll('.category-filter-btn');
+        var cards = document.querySelectorAll('.article-card');
+
+        bar.addEventListener('click', function (e) {
+            var btn = e.target.closest('.category-filter-btn');
+            if (!btn) return;
+
+            buttons.forEach(function (b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+
+            var selected = btn.getAttribute('data-category');
+            cards.forEach(function (card) {
+                var cardCategory = card.getAttribute('data-category');
+                var show = (selected === 'all') || (cardCategory === selected);
+                card.classList.toggle('is-hidden', !show);
+            });
+        });
+    })();
+</script>
 </body>
 </html>
