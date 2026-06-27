@@ -35,4 +35,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+    <url>
+    <loc>https://blog.galaxyspace.xyz/articles/being-single-isnt-a-waiting-room.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+      <url>
+    <loc>https://blog.galaxyspace.xyz/articles/choosing-each-other-a-different-kind-of-birthday.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+      <url>
+    <loc>https://blog.galaxyspace.xyz/articles/marking-the-fictional-universe-that-changed-your-real-one.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
