@@ -3,3 +3,21 @@
 
 /favicon.ico
   Content-Type: image/x-icon
+
+/*.css
+  Content-Type: text/css; charset=utf-8
+
+/*.js
+  Content-Type: application/javascript; charset=utf-8
+
+/*.jpg
+  Content-Type: image/jpeg
+
+/*.jpeg
+  Content-Type: image/jpeg
+
+/*.png
+  Content-Type: image/png
+
+/*.html
+  Content-Type: text/html; charset=utf-8
