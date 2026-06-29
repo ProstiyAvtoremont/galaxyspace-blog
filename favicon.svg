@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#0a0a1a"/>
+      <stop offset="100%" stop-color="#010105"/>
+    </radialGradient>
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6cf"/>
+      <stop offset="55%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#e6b800"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+
+  <!-- tiny background stars -->
+  <circle cx="10" cy="12" r="1.1" fill="#ffffff" opacity="0.55"/>
+  <circle cx="54" cy="14" r="0.9" fill="#ffffff" opacity="0.45"/>
+  <circle cx="9"  cy="50" r="0.8" fill="#ffffff" opacity="0.4"/>
+  <circle cx="55" cy="48" r="1.1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="49" cy="9"  r="0.7" fill="#ffffff" opacity="0.35"/>
+
+  <!-- main 4-point sparkle star -->
+  <path d="M32 6
+           C32.8 19.5 35.5 27 32 32
+           C28.5 27 31.2 19.5 32 6
+           Z
+           M32 58
+           C31.2 44.5 28.5 37 32 32
+           C35.5 37 32.8 44.5 32 58
+           Z
+           M6 32
+           C19.5 31.2 27 28.5 32 32
+           C27 35.5 19.5 32.8 6 32
+           Z
+           M58 32
+           C44.5 32.8 37 35.5 32 32
+           C37 28.5 44.5 31.2 58 32
+           Z"
+        fill="url(#starGlow)"/>
+
+  <!-- small cross sparkle accent, top-right -->
+  <path d="M47 16 L48 11 L49 16 L54 17 L49 18 L48 23 L47 18 L42 17 Z"
+        fill="#fff6cf" opacity="0.9"/>
+
+  <!-- soft center glow -->
+  <circle cx="32" cy="32" r="4.2" fill="#fffbe8"/>
+</svg>
