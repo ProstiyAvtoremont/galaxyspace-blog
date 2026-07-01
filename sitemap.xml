@@ -119,4 +119,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+                     </url>
+    <loc>https://blog.galaxyspace.xyz/clocking-out-for-the-last-time-how-to-actually-celebrate-it.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
