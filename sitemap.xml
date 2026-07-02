@@ -155,4 +155,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+                                 </url>
+    <loc>https://blog.galaxyspace.xyz/why-autumn-makes-everyone-a-little-bit-poetic.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
